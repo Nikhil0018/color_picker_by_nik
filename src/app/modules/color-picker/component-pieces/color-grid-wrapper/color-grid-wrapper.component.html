@@ -1,0 +1,17 @@
+<div class="color-grid-wrapper w-full grid" role="radiogroup" id="grid-container" role="radiogroup" [attr.aria-labelledby]="'ariaLabel'">
+
+    <ng-container 
+        *ngFor="let color of colors; let colorSequence = index" 
+        >
+        <app-color-item 
+            class="flex"
+            [value]="color" 
+            [checked]="colorFormControl?.value === color" 
+            [disabled]="false"
+            [index]="colorSequence"
+            (emitColorChange)="onColorChange($event)"
+            (emitMoveChange)="onMoveChange($event)">
+        </app-color-item>
+    </ng-container>
+
+</div>

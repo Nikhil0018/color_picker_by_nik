@@ -1,0 +1,15 @@
+<section class="color-grid-root h-full w-full flex flex-col overflow-hidden">
+
+    <app-color-grid-wrapper
+        class="flex-1 w-full overflow-hidden"
+        [colors]="colors"
+        [colorFormControl]="colorFormControl"
+    ></app-color-grid-wrapper>
+
+    <div class="selected-color-wrapper flex items-center justify-center">
+        <div class="selected-color text-3xl flex items-center justify-center aspect-square" [style.background-color]="colorFormControl?.value ?? '#ffffff'">
+            {{colorFormControl?.value ?? '#ffffff'}}
+        </div>
+    </div>
+    
+</section>

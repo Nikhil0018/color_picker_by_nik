@@ -1,0 +1,19 @@
+<div 
+    role="option"
+    tabindex="0"
+    [id]="'color-option-' + (index + 1)"
+    [attr.aria-label]="'Color option ' + (index + 1)"
+    [attr.aria-checked]="checked ? 'true' : 'false'" 
+    [attr.aria-disabled]="'false'"
+    [attr.aria-posinset]="index + 1" 
+    (keydown.arrowup)="onMove('up')"
+    (keydown.arrowdown)="onMove('down')"
+    (keydown.arrowleft)="onMove('left')"
+    (keydown.arrowright)="onMove('right')"
+    (focus)="selectColor()"
+    (click)="selectColor()"
+    class="grid-item color focus:ring-offset-1 focus:ring rounded-full"
+    [ngClass]="{'checked': checked, 'disabled': disabled}"
+    [style.background-color]="value"
+    >
+</div>
