@@ -1,7 +1,10 @@
 # ColorPickerByNik
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13. 
-A color picker that allows you to navigate and select a color using your keyboard arrow keys.
+A color picker that allows you to navigate and select a color using your keyboard arrow keys. 
+
+Steps To Use:
+Simply press Tab to focus on a color, then use the arrow keys (or Tab) to navigate through different colors.
 
 ## Development server
 
