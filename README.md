@@ -1,6 +1,7 @@
 # ColorPickerByNik
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13. 
+A color picker that allows you to navigate and select a color using your keyboard arrow keys.
 
 ## Development server
 
